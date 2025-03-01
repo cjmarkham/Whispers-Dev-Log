@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whispers of The Hollow - Development Log</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+<header>
+    <div class="container header-content">
+        <h1 class="site-title">Whispers of The Hollow</h1>
+        <p class="site-description">A psychological horror game set in an abandoned UK mining town, where silence speaks volumes and the past never truly dies.</p>
+    </div>
+</header>
+
+<div class="container main-content">
+    <nav class="devlog-nav">
+        <ul>
+            <li><a href="index.html">Dev Log</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <main class="devlog">
+        <article class="devlog-entry">
+            <header class="entry-header">
+                <h2 class="entry-title">Going smaller</h2>
+                <div class="entry-meta">
+                    <span class="entry-date">February 28th, 2025</span>
+                    <span class="entry-category">Update</span>
+                </div>
+            </header>
+            <div class="entry-content">
+                <p>
+                    Since I decided to move to first person, I decided to further reduce the complexity by removing animations from the echo playbacks.
+                    It's not what I wanted, but by making them static and more like a comic book, I can focus on more area of the game rather than worrying about animating several different characters.
+                    They will also take a more ghostly form, removing the need to worry about clothing for these characters.
+                </p>
+                <p>
+                    I also started playing about with Niagara, Unreals particle system. I spent way too much time on this, playing around with various settings.
+                    Eventually, I decided to stop what I was doing and go back to the basics. Instead of the glowing orb that the character can pick up, it will be a simple sphere.
+                </p>
+                <p>
+                    Tomorrow, I'll get to actually putting together the various mechanics that will make the game work.
+                </p>
+            </div>
+        </article>
+
+        <article class="devlog-entry">
+            <header class="entry-header">
+                <h2 class="entry-title">Starting small</h2>
+                <div class="entry-meta">
+                    <span class="entry-date">February 27th, 2025</span>
+                    <span class="entry-category">Update</span>
+                </div>
+            </header>
+            <div class="entry-content">
+                <p>
+                    Having gotten the cutscene working, I wanted to look more in to animations. I'd played with them years ago using Blender, so I wasn't new to it.
+                    However, I knew how complex they could get.
+                    This led me to look at <a href="https://cascadeur.com/" target="_blank" rel="nofollow">Cascadeur</a>, a program where you can create animations, and have AI fill in the blanks.
+                </p>
+                <p>
+                    I played with Cascadeur for a few hours, and I was able to create a basic walk cycle. However, progress was slow, and glitchy at times.
+                </p>
+                <p>
+                    Because of this, I decided to make a drastic decision. The game, which I had envisioned in third person, would be first person.
+                    I would prefer a third person game, but making it first person simplifies a lot of things.
+                    I wouldn't need to worry about animations for the player character, including facial animations. Cutscenes would be easier to create.
+                    I wouldn't have to worry about animations for movement, how the character looks etc.
+                    The houses you visit in the game would also be quite small, given they are old miners homes. Keeping the game in third person means the houses
+                    would need to be bigger than usual to accommodate the camera.
+                </p>
+                <p>
+                    Given this shift, I decided to create a new first person project and start from there.
+                </p>
+            </div>
+        </article>
+
+        <article class="devlog-entry">
+            <header class="entry-header">
+                <h2 class="entry-title">Starting small</h2>
+                <div class="entry-meta">
+                    <span class="entry-date">February 26th, 2025</span>
+                    <span class="entry-category">Update</span>
+                </div>
+            </header>
+            <div class="entry-content">
+                <p>
+                    I've decided to start with interactions. Being able to interact with an object and have something happen.
+                    It was simple enough really. Create a blueprint, add a collision overlap sphere and enable input when the character overlaps.
+                    Once that's done, I can trigger anything with the press of an Input Action.
+                </p>
+                <p>
+                    The next part I wanted to explore was a cutscene. I have a vision in my head, so I wanted to try and get this working.
+                    I looked in to Level Sequences and animations. I was able to get a basic animation working for the character, and moving the camera using keyframes.
+                    I was also able to get this Level Sequence to trigger when the player interacts with an object (with much hassle).
+                </p>
+                <p>
+                    After this, I called it a day. I was happy with what I had achieved, and I was excited to continue working on it tomorrow.
+                </p>
+            </div>
+        </article>
+
+        <article class="devlog-entry">
+            <header class="entry-header">
+                <h2 class="entry-title">Scoping to a prototype</h2>
+                <div class="entry-meta">
+                    <span class="entry-date">February 26th, 2025</span>
+                    <span class="entry-category">Update</span>
+                </div>
+            </header>
+            <div class="entry-content">
+                <p>
+                    I knew this would be a big project going in, but I didn't realise how big. I'd never used Unreal Engine before, but I was keen to learn.
+                </p>
+                <p>
+                    Having dove head first in to Unreal, the scope of the project became clearer as the days went on.
+                    From blueprints, animations, particles, materials, and more, I was quickly overwhelmed.
+                </p>
+                <p>
+                    So, I decided to focus on the smallest piece I could. I already had a story, and a rough idea of the first 10 minutes or so of the game.
+                    This would be the prototype I would build. Something small that I could focus on.
+                </p>
+                <p>
+                    With this in mind, I started to think about the parts that I would need to build this prototype.
+                    Thinks like grey-boxed houses and interiors, basic movement, interaction etc. Breaking it down to this small prototype
+                    made the project seem much more manageable.
+                </p>
+            </div>
+        </article>
+    </main>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Dev Log</a>
+                <a href="about.html">About</a>
+            </div>
+            <p class="copyright">© 2025 Whispers of The Hollow. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
