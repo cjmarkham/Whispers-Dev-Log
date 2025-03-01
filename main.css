@@ -99,11 +99,18 @@ nav a {
     position: relative;
 }
 
-nav a:hover {
+a {
+    color: var(--text);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+a:hover, nav a:hover {
     color: var(--accent);
 }
 
-nav a::after {
+a::after, nav a::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -114,7 +121,7 @@ nav a::after {
     transition: width 0.3s ease;
 }
 
-nav a:hover::after {
+a:hover::after, nav a:hover::after {
     width: 100%;
 }
 
