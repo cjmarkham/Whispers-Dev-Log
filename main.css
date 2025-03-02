@@ -21,7 +21,7 @@ body {
     color: var(--text);
     font-family: var(--body-font);
     line-height: 1.6;
-    background-image: url('./background.webp');
+    background-image: url('images/background.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
